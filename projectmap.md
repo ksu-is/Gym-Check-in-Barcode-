@@ -5,9 +5,9 @@ Sprint 1
 - [x] Search for related exisiting repository and clone it 
 
 Sprint 2
-- [] Commit to 6 code changes
-- [] Include comments to the commits 
-- [] Continue coding and testing
+-[] Commit to 6 code changes
+-[] Include comments to the commits 
+-[] Continue coding and testing
 
 Sprint 3
 - [] Create a PowerPoint to introduce project
