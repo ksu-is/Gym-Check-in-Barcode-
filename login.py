@@ -2,15 +2,30 @@ from tkinter import *
 from tkinter import ttk
 root = Tk()
 root.geometry('500x300')
-
+#Title of the website
 Label(root, text ="Gym Barcode", font='arial 15 bold').grid(row=0, column=3)
-
+#Labels of the entrys
 username = Label(root, text='Username')
 password = Label(root, text='Password')
 barcode = Label(root, text='Barcode')
-
+#The positions of the labels
 username.grid(row=1,column=2)
 password.grid(row=2,column=2)
 barcode.grid(row=3,column=2)
 
+#Variables for storing the labels
+usernamevalue = StringVar
+passwordvalue = StringVar
+barcodevalue = StringVar
+checkvalue = IntVar
+
+usernameentry = Entry(root, textvariable = usernamevalue)
+passwordentry = Entry(root, textvariable = passwordvalue) 
+barcodeentry = Entry(root, textvariable = barcodevalue)
+
+
+
+
 root.mainloop()
+
+
