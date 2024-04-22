@@ -15,24 +15,32 @@ username = Label(root, text='  Username ')
 password = Label(root, text='  Password ')
 barcode = Label(root, text='   Barcode ')
 #The positions of the labels
-username.grid(row=1,column=2)
-password.grid(row=2,column=2)
-barcode.grid(row=3,column=2)
+firstname.grid(row=1,column=2)
+lastname.grid(row=2,column=2)
+username.grid(row=3,column=2)
+password.grid(row=4,column=2)
+barcode.grid(row=5,column=2)
 
 #Variables for storing the labels
+firstnamevalue = StringVar
+lastnamevalue = StringVar
 usernamevalue = StringVar
 passwordvalue = StringVar
 barcodevalue = StringVar
 checkvalue = IntVar
 
+firstnameentry = Entry(root, textvariable = firstnamevalue)
+lastnameentry = Entry(root, textvariable = lastnamevalue)
 usernameentry = Entry(root, textvariable = usernamevalue)
 passwordentry = Entry(root, textvariable = passwordvalue) 
 barcodeentry = Entry(root, textvariable = barcodevalue)
 
 #Entrybox to input information 
-usernameentry.grid(row=1, column=3)
-passwordentry.grid(row=2,column=3)
-barcodeentry.grid(row=3, column=3)
+firstnameentry.grid(row=1, column=3)
+lastnameentry.grid(row=2,column=3)
+usernameentry.grid(row=3, column=3)
+passwordentry.grid(row=4,column=3)
+barcodeentry.grid(row=5, column=3)
 
 # Save login button
 savebutton = Checkbutton(text="Keep me signed in", variable = checkvalue)
