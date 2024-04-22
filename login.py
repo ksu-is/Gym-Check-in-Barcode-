@@ -28,6 +28,10 @@ usernameentry.grid(row=1, column=3)
 passwordentry.grid(row=2,column=3)
 barcodeentry.grid(row=3, column=3)
 
+# Save login button
+savebutton = Checkbutton(text="Keep me signed in", variable = checkvalue)
+savebutton.grid(row=6, column=3)
+
 root.mainloop()
 
 
