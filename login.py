@@ -2,6 +2,10 @@ from tkinter import *
 from tkinter import ttk
 root = Tk()
 root.geometry('500x300')
+
+def getvals():
+    print("Accepted")
+
 #Title of the website
 Label(root, text ="              Gym Barcode              ", font='arial 15 bold').grid(row=0, column=3)
 #Labels of the entrys
@@ -31,6 +35,9 @@ barcodeentry.grid(row=3, column=3)
 # Save login button
 savebutton = Checkbutton(text="Keep me signed in", variable = checkvalue)
 savebutton.grid(row=6, column=3)
+
+# Create Account button 
+Button(text="Create Account", command=getvals).grid(row=7,column=3)
 
 root.mainloop()
 
