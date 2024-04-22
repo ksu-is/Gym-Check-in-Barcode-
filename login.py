@@ -3,11 +3,11 @@ from tkinter import ttk
 root = Tk()
 root.geometry('500x300')
 #Title of the website
-Label(root, text ="Gym Barcode", font='arial 15 bold').grid(row=0, column=3)
+Label(root, text ="              Gym Barcode              ", font='arial 15 bold').grid(row=0, column=3)
 #Labels of the entrys
-username = Label(root, text='Username')
-password = Label(root, text='Password')
-barcode = Label(root, text='Barcode')
+username = Label(root, text='  Username ')
+password = Label(root, text='  Password ')
+barcode = Label(root, text='   Barcode ')
 #The positions of the labels
 username.grid(row=1,column=2)
 password.grid(row=2,column=2)
@@ -23,8 +23,10 @@ usernameentry = Entry(root, textvariable = usernamevalue)
 passwordentry = Entry(root, textvariable = passwordvalue) 
 barcodeentry = Entry(root, textvariable = barcodevalue)
 
-
-
+#Entrybox to input information 
+usernameentry.grid(row=1, column=3)
+passwordentry.grid(row=2,column=3)
+barcodeentry.grid(row=3, column=3)
 
 root.mainloop()
 
