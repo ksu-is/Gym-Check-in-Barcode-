@@ -42,10 +42,6 @@ usernameentry.grid(row=3, column=3)
 passwordentry.grid(row=4,column=3)
 barcodeentry.grid(row=5, column=3)
 
-# Save login button
-savebutton = Checkbutton(text="Keep me signed in", variable = checkvalue)
-savebutton.grid(row=6, column=3)
-
 # Create Account button 
 Button(text="Create Account", command=getvals).grid(row=7,column=3)
 
