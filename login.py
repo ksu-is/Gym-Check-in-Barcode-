@@ -14,4 +14,16 @@ password = Label(root, text= '  Password ')
 username.grid(row=1, column=5)
 password.grid(row=2, column=5)
 
+# Variables
+usernamevalue = StringVar
+passwordvalue = StringVar
+
+usernameentry = Entry(root, textvariable = usernamevalue)
+passwordentry =  Entry(root, textvariable = passwordvalue)
+
+# Entrybox for inputs
+usernameentry.grid (row=1, column= 3)
+passwordentry.grid(row=2, column= 3)
+
+
 root.mainloop()
