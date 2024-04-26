@@ -14,8 +14,8 @@ username = Label(root, text= '  Username  ')
 password = Label(root, text= '  Password ')
 
 # Label postions 
-username.grid(row=1, column=5)
-password.grid(row=2, column=5)
+username.grid(row=1, column=4)
+password.grid(row=2, column=4)
 
 # Variables
 usernamevalue = StringVar
@@ -25,10 +25,10 @@ usernameentry = Entry(root, textvariable = usernamevalue)
 passwordentry =  Entry(root, textvariable = passwordvalue)
 
 # Entrybox for inputs
-usernameentry.grid (row=1, column= 3)
-passwordentry.grid(row=2, column= 3)
+usernameentry.grid (row=1, column= 5)
+passwordentry.grid(row=2, column= 5)
 
 # Sign in button 
-Button(text="Sign in", command= getvals).grid(row=7, column=3)
+Button(text="Sign in", command= getvals).grid(row=7, column=5)
 
 root.mainloop()
