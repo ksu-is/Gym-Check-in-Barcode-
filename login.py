@@ -3,6 +3,9 @@ from tkinter import ttk
 root = Tk()
 root.geometry('500x300')
 
+def getvals():
+    print("Welcome")
+
 # Title of the Website 
 Label(root, text ="              Gym Barcode               ", font='arial 15 bold').grid(row=0, column=5)
 
@@ -25,5 +28,7 @@ passwordentry =  Entry(root, textvariable = passwordvalue)
 usernameentry.grid (row=1, column= 3)
 passwordentry.grid(row=2, column= 3)
 
+# Sign in button 
+Button(text="Sign in", command= getvals).grid(row=7, column=3)
 
 root.mainloop()
