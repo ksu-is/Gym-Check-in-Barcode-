@@ -10,11 +10,11 @@ Sprint 2
 - [x} Continue coding and testing
 
 Sprint 3
-- [ ] Create a PowerPoint to introduce project
-- [ ] Powerpoint includes title, tag line, and screenshots
-- [ ] Upload PowerPoint
+- [x] Create a PowerPoint to introduce project
+- [x] Powerpoint includes title, tag line, and screenshots
+- [x] Upload PowerPoint
 
 Final Presentation
-- [ ] Schedule presentation
+- [x] Schedule presentation
 - [ ] Present and record
 - [ ] Turn in presenation by taking screenshot of Teams 
