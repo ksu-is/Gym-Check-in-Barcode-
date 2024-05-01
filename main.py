@@ -25,6 +25,8 @@ def barcode_generator(barcodeentry):
        image_barcode = barcode.get_barcode_class('code128', writer=ImageWriter)
        image_barcode.save('barcode.png')
        barcodeentry('barcode.png')
+       openbarcode() 
+
 
 # Open the barcode image
 # Adding the image to Tkinter 
@@ -33,7 +35,7 @@ def openbarcode():
     b_image = Image.open('barcode.png')
     b_photo = ImageTk.PhotoImage(b_image)
     barcodelabel = Label(root, image=b_photo)
-    barcode_title = Label(root, text= 'Barcode Display')
+    barcode_title = Label(root, text= 'Barcode Display')\
 
 
 
