@@ -7,7 +7,7 @@ Sprint 1
 Sprint 2
 - [x] Commit to 6 code changes
 - [x] Include comments to the commits 
-- [x} Continue coding and testing
+- [x] Continue coding and testing
 
 Sprint 3
 - [x] Create a PowerPoint to introduce project

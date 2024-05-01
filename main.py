@@ -1,5 +1,9 @@
 from tkinter import * 
 from tkinter import ttk
+import barcode  
+from barcode.writer import ImageWriter
+from createaccount import barcodeentry
+
 root = Tk()
 root.geometry('500x300')
 
@@ -7,10 +11,17 @@ root.geometry('500x300')
 Label(root, text='        Welcome!', font='arial 15 bold').grid(row=0,column=6)
 
 Label(root,text= '   Scan barcode below to sign in ', font= 'arial 12').grid(row=1, column=3)
+ 
 
-from PIL import Image, ImageWriter
-import barcode 
-from barcode.writer import ImageWriter
+# Barcode entered from createaccount.py generated 
+def barcode_generator():
+    if barcodeentry == ' ':
+       image_barcode = barcode.get_barcode_class('code128', writer=ImageWriter)
+       image_barcode.save('barcode')
+       barcodeentry('barcode.png')
+
+
+
 
 
 
