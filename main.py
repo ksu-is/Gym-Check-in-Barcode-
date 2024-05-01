@@ -3,6 +3,8 @@ from tkinter import ttk
 import barcode  
 from barcode.writer import ImageWriter
 from createaccount import barcodeentry
+from login import username
+from login import password 
 
 root = Tk()
 root.geometry('500x300')
