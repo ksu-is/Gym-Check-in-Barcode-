@@ -17,11 +17,25 @@ Label(root,text= '   Scan barcode below to sign in ', font= 'arial 12').grid(row
  
 
 # Barcode entered from createaccount.py generated 
+# Generated barcode image 
+# Called the function
+# Display the barcode 
 def barcode_generator(barcodeentry):
     if barcodeentry == ' ':
        image_barcode = barcode.get_barcode_class('code128', writer=ImageWriter)
        image_barcode.save('barcode.png')
        barcodeentry('barcode.png')
+
+# Open the barcode image
+# Adding the image to Tkinter 
+# Create a label for image in Tkinter 
+def openbarcode(): 
+    b_image = Image.open('barcode.png')
+    b_photo = ImageTk.PhotoImage(b_image)
+    barcodelabel = Label(root, image=b_photo)
+    barcode_title = Label(root, text= 'Barcode Display')
+
+
 
 
 
