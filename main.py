@@ -28,11 +28,11 @@ def main():
 # Generated barcode image 
 # Called the function
 # Display the barcode 
-def barcode_generator(barcodeentry):
-    if barcodeentry.strip():
-       image_barcode = barcode.get_barcode_class('code128', writer=ImageWriter)
-       image_barcode.save('barcode.png')
-       barcodeentry('barcode.png')
+def barcode_generator(barcode_data):
+    if barcode_data.strip():
+       image_barcode = get_barcode_class('code128', writer=ImageWriter())
+       barcode_i = image_barcode(barcode_data)
+       barcode_i.save('barcode.png')
        openbarcode() 
 
 
