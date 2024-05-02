@@ -3,9 +3,7 @@ from tkinter import Label, Tk
 from PIL import Image, ImageTk
 import barcode  
 from barcode.writer import ImageWriter
-from createaccount import barcodeentry
-from login import username
-from login import password 
+ 
 
 root = Tk()
 root.geometry('500x300')
@@ -15,6 +13,16 @@ Label(root, text='        Welcome!', font='arial 15 bold').grid(row=0,column=6)
 
 Label(root,text= '   Scan barcode below to sign in ', font= 'arial 12').grid(row=1, column=3)
  
+ # Read the file and strip 
+def main():
+    new_account = open('account.txt', 'r')
+    username = new_account.readline().strip 
+    password = new_account.readline().strip()
+    barcode = new_account.readline().strip()
+
+if __name__ == "__main__":
+    main()
+
 
 # Barcode entered from createaccount.py generated 
 # Generated barcode image 
