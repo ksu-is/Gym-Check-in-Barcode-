@@ -1,7 +1,7 @@
 from tkinter import * 
 from tkinter import Label, Tk
 from PIL import Image, ImageTk
-import barcode  
+from barcode import get_barcode_class 
 from barcode.writer import ImageWriter
 from login import login 
 
@@ -14,14 +14,14 @@ Label(root, text='        Welcome!', font='arial 15 bold').grid(row=0,column=6)
 Label(root,text= '   Scan barcode below to sign in ', font= 'arial 12').grid(row=1, column=3)
  
  # Read the file and strip 
+ # Call barcode_generator()
 def main():
     new_account = open('account.txt', 'r')
     username = new_account.readline().strip 
     password = new_account.readline().strip()
     barcode = new_account.readline().strip()
 
-if __name__ == "__main__":
-    main()
+    barcode_generator(barcode)
 
 
 # Barcode entered from createaccount.py generated 
@@ -48,13 +48,7 @@ def openbarcode():
     barcode_title = Label(root, text= 'Barcode Display')
     barcode_title.grid(row=3,column=1)
 
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
 
 root.mainloop()
