@@ -6,7 +6,7 @@ root.geometry('500x300')
 # Open file as read-on;y
 # .strip() to remove the whitespace 
 # Save username, password and barcode to main.py
-def login():
+def login(): 
     new_account = open('account.txt', 'r')
     savedusername = new_account.readline().strip()
     savedpassword = new_account.readline().strip()
@@ -34,8 +34,8 @@ username.grid(row=1, column=4)
 password.grid(row=2, column=4)
 
 # Variables
-usernamevalue = StringVar
-passwordvalue = StringVar
+usernamevalue = StringVar()
+passwordvalue = StringVar()
 
 usernameentry = Entry(root, textvariable = usernamevalue)
 passwordentry =  Entry(root, textvariable = passwordvalue)

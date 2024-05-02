@@ -8,35 +8,36 @@ root.geometry('500x300')
 def getvals():
     username = usernamevalue.get()
     password = passwordvalue.get()
-    barcode = barcodevalue.get() 
+    barcode = barcodevalue.get()
     new_account = open('account.txt','w')
+    print(new_account)
     new_account.write(username + "\n")
     new_account.write(password + "\n")
     new_account.write(barcode)
     print("Account created")
+    new_account.close()
 
 #Title of the website
 Label(root, text ="              Gym Barcode              ", font='arial 15 bold').grid(row=0, column=3)
 #Labels of the entrys
-firstname = Label(root, text= ' First Name')
-lastname = Label (root, text= 'Last Name')
-username = Label(root, text='  Username ')
-password = Label(root, text='  Password ')
-barcode = Label(root, text='   Barcode ')
+firstname_label = Label(root, text= ' First Name')
+lastname_label = Label (root, text= 'Last Name')
+username_label = Label(root, text='  Username ')
+password_label = Label(root, text='  Password ')
+barcode_label = Label(root, text='   Barcode ')
 #The positions of the labels
-firstname.grid(row=1,column=2)
-lastname.grid(row=2,column=2)
-username.grid(row=3,column=2)
-password.grid(row=4,column=2)
-barcode.grid(row=5,column=2)
+firstname_label.grid(row=1,column=2)
+lastname_label.grid(row=2,column=2)
+username_label.grid(row=3,column=2)
+password_label.grid(row=4,column=2)
+barcode_label.grid(row=5,column=2)
 
 #Variables for storing the labels
-firstnamevalue = StringVar
-lastnamevalue = StringVar
-usernamevalue = StringVar
-passwordvalue = StringVar
-barcodevalue = StringVar
-checkvalue = IntVar
+firstnamevalue = StringVar()
+lastnamevalue = StringVar()
+usernamevalue = StringVar()
+passwordvalue = StringVar()
+barcodevalue = StringVar()
 
 firstnameentry = Entry(root, textvariable = firstnamevalue)
 lastnameentry = Entry(root, textvariable = lastnamevalue)

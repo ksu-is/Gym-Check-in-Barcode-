@@ -3,7 +3,7 @@ from tkinter import Label, Tk
 from PIL import Image, ImageTk
 import barcode  
 from barcode.writer import ImageWriter
- 
+from login import login 
 
 root = Tk()
 root.geometry('500x300')
