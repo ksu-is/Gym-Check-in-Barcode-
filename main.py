@@ -2,14 +2,13 @@ from tkinter import *
 from PIL import Image, ImageTk
 from barcode import Code128
 from barcode.writer import ImageWriter
-from createaccount import getvals
-from login import log_in 
+from createaccount import getvals 
 
 root = Tk()
-root.geometry('500x300')
+root.geometry('500x400')
 
 #Title of the main window
-Label(root, text='        Welcome!', font='arial 15 bold').grid(row=0,column=6)
+Label(root, text='Welcome!', font='arial 15 bold').grid(row=0,column=4)
 
 Label(root,text= '   Scan barcode below to sign in ', font= 'arial 12').grid(row=1, column=3)
  
@@ -22,6 +21,7 @@ def main():
     barcode_data = new_account.readline().strip()
 
     barcode_generator(barcode_data)
+    log_in(username, password)
 
 
 # Barcode entered from createaccount.py generated 
@@ -44,9 +44,9 @@ def openbarcode():
     b_photo = ImageTk.PhotoImage(b_image)
     barcodelabel = Label(root, image=b_photo)
     barcodelabel.image = b_photo
-    barcodelabel.grid(row=2,column=1)
+    barcodelabel.grid(row=2,column=4)
     barcode_title = Label(root, text= 'Barcode Display')
-    barcode_title.grid(row=3,column=1)
+    barcode_title.grid(row=3,column=4)
 
 if __name__ == "__main__":
     main()
