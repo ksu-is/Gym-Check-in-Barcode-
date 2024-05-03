@@ -4,7 +4,7 @@ from tkinter import ttk
 # Open file as read-on;y
 # .strip() to remove the whitespace 
 # Save username, password and barcode to main.py
-def login(): 
+def log_in(): 
     entered_username = usernamevalue.get()
     entered_password = passwordvalue.get()
     account_2 = open('account.txt', 'r')
@@ -40,6 +40,6 @@ if __name__ == '__main__':
     usernameentry.grid (row=1, column= 5)
     passwordentry.grid(row=2, column= 5)
     # Sign in button 
-    Button(text="Sign in", command= login).grid(row=7, column=5)
+    Button(text="Sign in", command= log_in).grid(row=7, column=5)
     
     root.mainloop()

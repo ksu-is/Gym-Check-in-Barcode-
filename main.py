@@ -2,7 +2,8 @@ from tkinter import *
 from PIL import Image, ImageTk
 from barcode import Code128
 from barcode.writer import ImageWriter
-from login import login 
+from createaccount import getvals
+from login import log_in 
 
 root = Tk()
 root.geometry('500x300')
