@@ -21,7 +21,6 @@ def main():
     barcode_data = new_account.readline().strip()
 
     barcode_generator(barcode_data)
-    log_in(username, password)
 
 
 # Barcode entered from createaccount.py generated 
@@ -50,5 +49,4 @@ def openbarcode():
 
 if __name__ == "__main__":
     main()
-
-root.mainloop()
+    root.mainloop()

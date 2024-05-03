@@ -16,5 +16,5 @@ Sprint 3
 
 Final Presentation
 - [x] Schedule presentation
-- [ ] Present and record
-- [ ] Turn in presenation by taking screenshot of Teams 
+- [x] Present and record
+- [x] Turn in presenation by taking screenshot of Teams 
